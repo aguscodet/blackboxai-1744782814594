@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PT TIGA SUKSES SEKAWAN - Internet Provider Profesional</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .fade-in {
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+    .slide-up {
+      animation: slideUp 0.8s ease forwards;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    /* Scrollbar for testimonials */
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-500">
+  <!-- Navbar -->
+  <nav class="bg-white dark:bg-gray-800 shadow sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="flex items-center space-x-3">
+        <img src="images/logo-new.svg" alt="Logo" class="h-10" />
+        <span class="text-2xl font-bold text-green-600 dark:text-green-400">
+          TIGA SUKSES SEKAWAN
+        </span>
+      </a>
+      <div class="hidden md:flex space-x-8 text-gray-700 dark:text-gray-300">
+        <a href="#home" class="hover:text-green-600 dark:hover:text-green-400 transition">Beranda</a>
+        <a href="#features" class="hover:text-green-600 dark:hover:text-green-400 transition">Keunggulan</a>
+        <a href="#pricing" class="hover:text-green-600 dark:hover:text-green-400 transition">Paket</a>
+        <a href="#testimonials" class="hover:text-green-600 dark:hover:text-green-400 transition">Testimoni</a>
+        <a href="#faq" class="hover:text-green-600 dark:hover:text-green-400 transition">FAQ</a>
+        <a href="#contact" class="hover:text-green-600 dark:hover:text-green-400 transition">Kontak</a>
+      </div>
+      <button
+        id="darkToggle"
+        aria-label="Toggle Dark Mode"
+        class="text-gray-700 dark:text-gray-300 focus:outline-none"
+      >
+        <i class="fas fa-moon text-xl"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section
+    id="home"
+    class="container mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-12"
+  >
+    <div class="md:w-1/2 fade-in">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+        Internet <span class="text-green-600 dark:text-green-400">Cepat</span> dan
+        <span class="text-green-600 dark:text-green-400">Stabil</span> untuk
+        Rumah dan Bisnis Anda
+      </h1>
+      <p class="text-lg mb-8 text-gray-700 dark:text-gray-300">
+        PT TIGA SUKSES SEKAWAN menyediakan layanan internet fiber optic dengan
+        harga terjangkau dan dukungan 24/7 untuk wilayah Tebing Tinggi dan sekitarnya.
+      </p>
+      <a
+        href="https://wa.me/085707497957"
+        target="_blank"
+        class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg shadow-lg transition"
+        >Hubungi Kami via WhatsApp</a
+      >
+    </div>
+    <div class="md:w-1/2 fade-in">
+      <img
+        src="images/network-illustration.svg"
+        alt="Network Illustration"
+        class="w-full max-w-md mx-auto"
+      />
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section
+    id="features"
+    class="bg-white dark:bg-gray-800 py-20 shadow-inner"
+  >
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Keunggulan Kami</h2>
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto text-center"
+      >
+        <div class="slide-up p-6 bg-green-50 dark:bg-green-900 rounded-xl shadow-lg">
+          <i class="fas fa-bolt text-green-600 text-5xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Koneksi Stabil</h3>
+          <p class="text-gray-700 dark:text-gray-300">
+            Jaringan fiber optic dengan uptime 99.9% untuk koneksi tanpa gangguan.
+          </p>
+        </div>
+        <div class="slide-up p-6 bg-green-50 dark:bg-green-900 rounded-xl shadow-lg">
+          <i class="fas fa-headset text-green-600 text-5xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Layanan 24/7</h3>
+          <p class="text-gray-700 dark:text-gray-300">
+            Tim support siap membantu kapan saja, cepat dan responsif.
+          </p>
+        </div>
+        <div class="slide-up p-6 bg-green-50 dark:bg-green-900 rounded-xl shadow-lg">
+          <i class="fas fa-tag text-green-600 text-5xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Harga Terjangkau</h3>
+          <p class="text-gray-700 dark:text-gray-300">
+            Paket mulai dari Rp100.000/bulan dengan kualitas premium.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="container mx-auto px-6 py-20">
+    <h2 class="text-3xl font-bold text-center mb-12">Paket Internet</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <!-- Paket Basic -->
+      <div
+        class="border border-green-600 rounded-xl p-8 shadow-lg hover:shadow-2xl transition cursor-pointer"
+      >
+        <h3 class="text-xl font-bold mb-4 text-green-600">Basic</h3>
+        <p class="mb-6 text-gray-700 dark:text-gray-300">
+          Kecepatan 10 Mbps, cocok untuk penggunaan rumahan ringan.
+        </p>
+        <div class="text-4xl font-extrabold mb-6">Rp100.000<span class="text-lg font-normal">/bulan</span></div>
+        <ul class="mb-6 space-y-3 text-gray-700 dark:text-gray-300">
+          <li><i class="fas fa-check-circle text-green-600 mr-2"></i> Unlimited kuota</li>
+          <li><i class="fas fa-check-circle text-green-600 mr-2"></i> Gratis pemasangan</li>
+          <li><i class="fas fa-check-circle text-green-600 mr-2"></i> Support 24/7</li>
+        </ul>
+      <a
+        href="https://wa.me/085707497957"
+        target="_blank"
+        class="block bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-lg text-center transition"
+        >Daftar Sekarang</a
+      >
+      </div>
+
+      <!-- Paket Standard -->
+      <div
+        class="border border-green-600 rounded-xl p-8 shadow-lg hover:shadow-2xl transition cursor-pointer"
+      >
+        <h3 class="text-xl font-bold mb-4 text-green-600">Standard</h3>
+        <p class="mb-6 text-gray-700 dark:text-gray-300">
+          Kecepatan 15 Mbps, ideal untuk keluarga dan bisnis kecil.
+        </p>
+        <div class="text-4xl font-extrabold mb-6">Rp185.000<span class="text-lg font-normal">/bulan</span></div>
+        <ul class="mb-6 space-y-3 text-gray-700 dark:text-gray-300">
+          <li><i class="fas fa-check-circle text-green-600 mr-2"></i> Unlimited kuota</li>
+          <li><i class="fas fa-check-circle text-green-600 mr-2"></i> Gratis pemasangan</li>
+          <li><i class="fas fa-check-circle text-green-600 mr-2"></i> Support 24/7</li>
+          <li><i class="fas fa-check-circle text-green-600 mr-2"></i> IP Publik</li>
+        </ul>
+        <a
+          href="https://wa.me/085707497957"
+          target="_blank"
+          class="block bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-lg text-center transition"
+          >Daftar Sekarang</a
+        >
+      </div>
+
+      <!-- Paket Premium -->
+      <div
+        class="border border-green-600 rounded-xl p-8 shadow-lg hover:shadow-2xl transition cursor-pointer"
+      >
+        <h3 class="text-xl font-bold mb-4 text-green-600">Premium</h3>
+        <p class="mb-6 text-gray-700 dark:text-gray-300">
+          Kecepatan 20 Mbps, solusi terbaik untuk bisnis dan pengguna berat.
+        </p>
+        <div class="text-4xl font-extrabold mb-6">Rp350.000<span class="text-lg font-normal">/bulan</span></div>
+        <ul class="mb-6 space-y-3 text-gray-700 dark:text-gray-300">
+          <li><i class="fas fa-check-circle text-green-600 mr-2"></i> Unlimited kuota</li>
+          <li><i class="fas fa-check-circle text-green-600 mr-2"></i> Gratis pemasangan</li>
+          <li><i class="fas fa-check-circle text-green-600 mr-2"></i> Support 24/7</li>
+          <li><i class="fas fa-check-circle text-green-600 mr-2"></i> IP Publik</li>
+          <li><i class="fas fa-check-circle text-green-600 mr-2"></i> Garansi uptime 99.9%</li>
+        </ul>
+        <a
+          href="https://wa.me/085707497957"
+          target="_blank"
+          class="block bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-lg text-center transition"
+          >Daftar Sekarang</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section
+    id="testimonials"
+    class="bg-white dark:bg-gray-800 py-20"
+  >
+    <div class="container mx-auto px-6 max-w-6xl">
+      <h2 class="text-3xl font-bold text-center mb-12">Apa Kata Pelanggan Kami</h2>
+      <div
+        class="flex overflow-x-auto scrollbar-hide gap-8 px-4"
+        tabindex="0"
+        aria-label="Testimoni pelanggan"
+      >
+        <article
+          class="min-w-[300px] bg-green-50 dark:bg-green-900 rounded-xl p-6 shadow-lg flex-shrink-0"
+        >
+          <div class="flex items-center mb-4">
+            <img
+              src="images/testimonial-1.jpg"
+              alt="Budi Santoso"
+              class="w-16 h-16 rounded-full mr-4 object-cover"
+            />
+            <div>
+              <h3 class="font-bold text-lg">Budi Santoso</h3>
+              <div class="text-yellow-400">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-700 dark:text-gray-300">
+            "Koneksi internet sangat stabil dan cepat. Support yang responsif
+            membuat saya sangat puas."
+          </p>
+        </article>
+        <article
+          class="min-w-[300px] bg-green-50 dark:bg-green-900 rounded-xl p-6 shadow-lg flex-shrink-0"
+        >
+          <div class="flex items-center mb-4">
+            <img
+              src="images/testimonial-2.jpg"
+              alt="Ani Wijaya"
+              class="w-16 h-16 rounded-full mr-4 object-cover"
+            />
+            <div>
+              <h3 class="font-bold text-lg">Ani Wijaya</h3>
+              <div class="text-yellow-400">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-700 dark:text-gray-300">
+            "Harga terjangkau dengan kualitas premium. Sangat cocok untuk
+            keluarga dan bisnis kecil."
+          </p>
+        </article>
+        <article
+          class="min-w-[300px] bg-green-50 dark:bg-green-900 rounded-xl p-6 shadow-lg flex-shrink-0"
+        >
+          <div class="flex items-center mb-4">
+            <img
+              src="images/testimonial-3.jpg"
+              alt="Dewi Lestari"
+              class="w-16 h-16 rounded-full mr-4 object-cover"
+            />
+            <div>
+              <h3 class="font-bold text-lg">Dewi Lestari</h3>
+              <div class="text-yellow-400">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-700 dark:text-gray-300">
+            "CS sangat membantu dan cepat tanggap. Sangat direkomendasikan!"
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="container mx-auto px-6 py-20">
+    <h2 class="text-3xl font-bold text-center mb-12">Pertanyaan yang Sering Diajukan</h2>
+    <div class="max-w-4xl mx-auto space-y-6">
+      <details class="group border border-green-600 rounded-lg p-4 bg-green-50 dark:bg-green-900">
+        <summary class="cursor-pointer font-semibold text-green-700 dark:text-green-300">
+          Apa saja paket yang tersedia?
+          <span class="float-right transition-transform group-open:rotate-180">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </summary>
+        <p class="mt-2 text-gray-700 dark:text-gray-300">
+          Kami menyediakan paket Basic, Standard, dan Premium dengan kecepatan hingga 20 Mbps.
+        </p>
+      </details>
+      <details class="group border border-green-600 rounded-lg p-4 bg-green-50 dark:bg-green-900">
+        <summary class="cursor-pointer font-semibold text-green-700 dark:text-green-300">
+          Apakah ada biaya pemasangan?
+          <span class="float-right transition-transform group-open:rotate-180">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </summary>
+        <p class="mt-2 text-gray-700 dark:text-gray-300">
+          Biaya pemasangan gratis untuk 50 pelanggan pertama.
+        </p>
+      </details>
+      <details class="group border border-green-600 rounded-lg p-4 bg-green-50 dark:bg-green-900">
+        <summary class="cursor-pointer font-semibold text-green-700 dark:text-green-300">
+          Bagaimana cara mendaftar?
+          <span class="float-right transition-transform group-open:rotate-180">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </summary>
+        <p class="mt-2 text-gray-700 dark:text-gray-300">
+          Anda dapat mendaftar melalui WhatsApp dengan mengklik tombol "Daftar Sekarang".
+        </p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section
+    id="contact"
+    class="bg-white dark:bg-gray-800 py-20"
+  >
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h2 class="text-3xl font-bold text-center mb-12">Hubungi Kami</h2>
+      <form
+        action="https://wa.me/085707497957"
+        method="get"
+        target="_blank"
+        class="space-y-6"
+      >
+        <div>
+          <label for="name" class="block mb-2 font-semibold text-gray-700 dark:text-gray-300"
+            >Nama Lengkap</label
+          >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600 dark:bg-gray-700 dark:border-gray-600"
+          />
+        </div>
+        <div>
+          <label for="phone" class="block mb-2 font-semibold text-gray-700 dark:text-gray-300"
+            >Nomor Telepon</label
+          >
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600 dark:bg-gray-700 dark:border-gray-600"
+          />
+        </div>
+        <div>
+          <label for="message" class="block mb-2 font-semibold text-gray-700 dark:text-gray-300"
+            >Pesan</label
+          >
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600 dark:bg-gray-700 dark:border-gray-600"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-lg transition"
+        >
+          Kirim Pesan via WhatsApp
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2025 PT TIGA SUKSES SEKAWAN. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Dark mode toggle
+    const darkToggle = document.getElementById('darkToggle');
+    darkToggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      localStorage.setItem(
+        'darkMode',
+        document.documentElement.classList.contains('dark')
+      );
+    });
+    if (localStorage.getItem('darkMode') === 'true') {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+</body>
+</html>
