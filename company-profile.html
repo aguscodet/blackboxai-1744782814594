@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT TIGA SUKSES SEKAWAN - Profesional Internet Provider</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                colors: {
+                    primary: '#16a34a',
+                    secondary: '#4b5563',
+                    accent: '#ea580c',
+                    dark: '#1f2937',
+                    light: '#f9fafb'
+                },
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 5s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #16a34a, #4b5563);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans bg-light text-gray-800 dark:bg-dark dark:text-gray-100 transition-colors duration-300">
+    <!-- Floating Particles Background -->
+    <div class="fixed inset-0 overflow-hidden -z-10">
+        <div class="absolute top-1/4 left-1/4 w-8 h-8 rounded-full bg-primary/20 animate-pulse-slow"></div>
+        <div class="absolute top-1/3 right-1/3 w-12 h-12 rounded-full bg-secondary/20 animate-pulse-slow"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-10 h-10 rounded-full bg-primary/20 animate-pulse-slow"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#" class="flex items-center space-x-2">
+                    <img src="images/logo-new.svg" alt="Logo" class="h-10">
+                    <span class="text-xl font-bold gradient-text">TIGA SUKSES SEKAWAN</span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="hover:text-primary transition">Beranda</a>
+                    <a href="#services" class="hover:text-primary transition">Layanan</a>
+                    <a href="#about" class="hover:text-primary transition">Tentang Kami</a>
+                    <a href="#contact" class="hover:text-primary transition">Kontak</a>
+                    <button class="dark-mode-toggle px-4 py-2 rounded-full bg-gray-200 dark:bg-gray-700">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:block"></i>
+                    </button>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative py-20 md:py-32 overflow-hidden">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    <span class="gradient-text">Solusi Internet</span><br>
+                    <span class="text-gray-700 dark:text-gray-300">Terbaik untuk Bisnis dan Rumah</span>
+                </h1>
+                <p class="text-lg text-gray-600 dark:text-gray-400 mb-8">
+                    Memberikan koneksi stabil dengan teknologi fiber optic terbaru untuk wilayah Tebing Tinggi dan sekitarnya.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="bg-primary hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+                        Hubungi Kami
+                    </a>
+                    <a href="#services" class="border-2 border-primary text-primary hover:bg-primary/10 font-bold py-3 px-8 rounded-full transition duration-300">
+                        Lihat Layanan
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 relative">
+                <div class="relative z-10">
+                    <img src="images/network-illustration.svg" alt="Network Illustration" class="w-full h-auto">
+                </div>
+                <div class="absolute -bottom-10 -right-10 w-64 h-64 rounded-full bg-primary/20 blur-3xl"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-6 rounded-xl bg-white dark:bg-gray-700 shadow-sm">
+                    <div class="text-4xl font-bold text-primary mb-2">99.9%</div>
+                    <div class="text-gray-600 dark:text-gray-400">Uptime</div>
+                </div>
+                <div class="p-6 rounded-xl bg-white dark:bg-gray-700 shadow-sm">
+                    <div class="text-4xl font-bold text-primary mb-2">10K+</div>
+                    <div class="text-gray-600 dark:text-gray-400">Pelanggan</div>
+                </div>
+                <div class="p-6 rounded-xl bg-white dark:bg-gray-700 shadow-sm">
+                    <div class="text-4xl font-bold text-primary mb-2">24/7</div>
+                    <div class="text-gray-600 dark:text-gray-400">Support</div>
+                </div>
+                <div class="p-6 rounded-xl bg-white dark:bg-gray-700 shadow-sm">
+                    <div class="text-4xl font-bold text-primary mb-2">5+</div>
+                    <div class="text-gray-600 dark:text-gray-400">Tahun Pengalaman</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Layanan Kami</h2>
+                <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                    Berbagai pilihan paket internet dengan kecepatan tinggi dan harga terjangkau
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Paket 1 -->
+                <div class="group relative bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="p-8">
+                        <div class="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-6">
+                            <i class="fas fa-home text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Paket Rumahan</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-6">
+                            Solusi internet untuk kebutuhan keluarga dengan kecepatan stabil
+                        </p>
+                        <div class="text-3xl font-bold text-primary mb-6">Rp185.000<span class="text-lg font-normal text-gray-500">/bulan</span></div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-primary mr-2"></i>
+                                <span>10 Mbps Unlimited</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-primary mr-2"></i>
+                                <span>Gratis Pemasangan</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-primary mr-2"></i>
+                                <span>Support 24/7</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="inline-block w-full text-center bg-primary hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                            Daftar Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paket 2 -->
+                <div class="group relative bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                    <div class="absolute top-0 right-0 bg-accent text-white px-4 py-1 text-sm font-bold rounded-bl-lg">
+                        POPULER
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="p-8">
+                        <div class="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-6">
+                            <i class="fas fa-business-time text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Paket Bisnis</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-6">
+                            Koneksi dedicated untuk kebutuhan bisnis dengan performa optimal
+                        </p>
+                        <div class="text-3xl font-bold text-primary mb-6">Rp350.000<span class="text-lg font-normal text-gray-500">/bulan</span></div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-primary mr-2"></i>
+                                <span>30 Mbps Unlimited</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-primary mr-2"></i>
+                                <span>IP Publik</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-primary mr-2"></i>
+                                <span>Priority Support</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-primary mr-2"></i>
+                                <span>Garansi Uptime 99.9%</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="inline-block w-full text-center bg-primary hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                            Daftar Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paket 3 -->
+                <div class="group relative bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="p-8">
+                        <div class="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-6">
+                            <i class="fas fa-building text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Paket Enterprise</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-6">
+                            Solusi terbaik untuk perusahaan dengan kebutuhan bandwidth tinggi
+                        </p>
+                        <div class="text-3xl font-bold text-primary mb-6">Rp750.000<span class="text-lg font-normal text-gray-500">/bulan</span></div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-primary mr-2"></i>
+                                <span>100 Mbps Unlimited</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-primary mr-2"></i>
+                                <span>Multiple IP Publik</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-primary mr-2"></i>
+                                <span>Dedicated Support</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-primary mr-2"></i>
+                                <span>SLA 99.99%</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-primary mr-2"></i>
+                                <span>Monitoring 24/7</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="inline-block w-full text-center bg-primary hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                            Hubungi Sales
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <h2 class="text-3xl font-bold mb-6">Tentang Perusahaan</h2>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">
+                        PT Tiga Sukses Sekawan adalah penyedia layanan internet berbasis fiber optic yang berkomitmen memberikan koneksi terbaik untuk pelanggan di wilayah Tebing Tinggi dan sekitarnya.
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">
+                        Didirikan pada tahun 2018, kami telah berkembang menjadi salah satu provider internet terpercaya dengan jaringan yang luas dan teknologi terkini.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center mr-4">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold">5+ Tahun</div>
+                                <div class="text-sm text-gray-500">Pengalaman</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center mr-4">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold">10.000+</div>
+                                <div class="text-sm text-gray-500">Pelanggan</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 relative">
+                    <div class="relative z-10 rounded-xl overflow-hidden shadow-lg">
+                        <img src="images/team-office.jpg" alt="Our Team" class="w-full h-auto">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 w-40 h-40 rounded-full bg-primary/20 blur-3xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Apa Kata Pelanggan Kami</h2>
+                <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                    Testimoni dari pelanggan yang telah menggunakan layanan kami
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimoni 1 -->
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                            <img src="images/testimonial-1.jpg" alt="Testimoni 1" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Budi Santoso</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400">
+                        "Sejak menggunakan layanan PT Tiga Sukses Sekawan, bisnis saya bisa berjalan lancar tanpa kendala koneksi internet. Support yang responsif dan koneksi stabil."
+                    </p>
+                </div>
+
+                <!-- Testimoni 2 -->
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                            <img src="images/testimonial-2.jpg" alt="Testimoni 2" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Ani Wijaya</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400">
+                        "Harga terjangkau dengan kualitas premium. Anak-anak bisa belajar online dan suami WFH tanpa masalah. Terima kasih Tiga Sukses Sekawan!"
+                    </p>
+                </div>
+
+                <!-- Testimoni 3 -->
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                            <img src="images/testimonial-3.jpg" alt="Testimoni 3" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Dewi Lestari</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400">
+                        "CS sangat membantu ketika ada masalah teknis. Jarang down dan jika ada gangguan selalu cepat ditangani. Recommended untuk bisnis UMKM."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Siap Meningkatkan Koneksi Internet Anda?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Dapatkan penawaran khusus untuk pelanggan baru dengan diskon pemasangan 50%
+            </p>
+            <a href="#contact" class="inline-block bg-white hover:bg-gray-100 text-primary font-bold py-4 px-12 rounded-full text-lg transition duration-300">
+                Hubungi Kami Sekarang
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <h2 class="text-3xl font-bold mb-6">Hubungi Kami</h2>
+                    <p class="text-gray-600 dark:text-gray-400 mb-8">
+                        Silakan hubungi kami melalui form kontak atau informasi di bawah ini:
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Alamat Kantor</h4>
+                                <p class="text-gray-600 dark:text-gray-400">
+                                    Jl. Merdeka No. 123, Tebing Tinggi, Sumatera Utara
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Telepon</h4>
+                                <p class="text-gray-600 dark:text-gray-400">
+                                    0877-8008-2732 (Customer Service)<br>
+                                    0812-3456-7890 (Sales)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <p class="text-gray-600 dark:text-gray-400">
+                                    cs@tigasukses.com<br>
+                                    sales@tigasukses.com
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Jam Operasional</h4>
+                                <p class="text-gray-600 dark:text-gray-400">
+                                    Senin-Jumat: 08.00 - 17.00 WIB<br>
+                                    Sabtu: 08.00 - 15.00 WIB
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-sm">
+                        <h3 class="text-xl font-bold mb-6">Kirim Pesan</h3>
+                        <form>
+                            <div class="mb-6">
+                                <label class="block text-gray-700 dark:text-gray-300 mb-2">Nama Lengkap</label>
+                                <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-800 dark:border-gray-600">
+                            </div>
+                            <div class="mb-6">
+                                <label class="block text-gray-700 dark:text-gray-300 mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-800 dark:border-gray-600">
+                            </div>
+                            <div class="mb-6">
+                                <label class="block text-gray-700 dark:text-gray-300 mb-2">Nomor Telepon</label>
+                                <input type="tel" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-800 dark:border-gray-600">
+                            </div>
+                            <div class="mb-6">
+                                <label class="block text-gray-700 dark:text-gray-300 mb-2">Pesan</label>
+                                <textarea rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-800 dark:border-gray-600"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                                Kirim Pesan
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <a href="#" class="flex items-center space-x-2 mb-4">
+                        <img src="images/logo-new.svg" alt="Logo" class="h-10">
+                        <span class="text-xl font-bold gradient-text">TIGA SUKSES SEKAWAN</span>
+                    </a>
+                    <p class="text-gray-400 mb-4">
+                        Penyedia layanan internet berbasis fiber optic terbaik di Tebing Tinggi dan sekitarnya.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-700 hover:bg-primary flex items-center justify-center transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-700 hover:bg-primary flex items-center justify-center transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-700 hover:bg-primary flex items-center justify-center transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Layanan</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition">Paket Rumahan</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition">Paket Bisnis</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition">Paket Enterprise</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition">Promo Spesial</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Perusahaan</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition">Tentang Kami</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition">Tim Kami</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition">Karir</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Dukungan</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition">Bantuan Teknis</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition">Syarat & Ketentuan</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 PT Tiga Sukses Sekawan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Dark Mode Toggle -->
+    <button class="dark-mode-toggle fixed bottom-8 right-8 w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700 shadow-lg z-50 flex items-center justify-center text-gray-800 dark:text-gray-200">
+        <i class="fas fa-moon dark:hidden"></i>
+        <i class="fas fa-sun hidden dark:block"></i>
+    </button>
+
+    <script>
+        const toggle = document.querySelector('.dark-mode-toggle');
+        toggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('darkMode', document.documentElement.classList.contains('dark'));
+        });
+
+        // Check for saved user preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+</body>
+</html>
