@@ -1,0 +1,47 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap');
+
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #1e293b;
+    line-height: 1.6;
+    background-color: #f8fafc;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+    color: white;
+    padding: 2rem 0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Promo Banner */
+.bg-yellow-400 {
+    background-color: #fbbf24;
+}
+
+/* Section Styles */
+section {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+/* Button Styles */
+button {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1e293b;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
