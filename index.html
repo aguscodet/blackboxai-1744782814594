@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>77.net - Provider Internet Tebing Tinggi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-new.css">
+</head>
+<body class="font-sans bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16 glass">
+        <div class="container mx-auto px-4 text-center">
+            <img src="images/logo-new.svg" alt="PT TIGA SUKSES SEKAWAN" class="h-20 mx-auto mb-6">
+            <h1 class="text-5xl font-bold mb-4">PT TIGA SUKSES SEKAWAN</h1>
+            <p class="text-2xl mb-6">Penyedia Layanan Internet Rumah Terpercaya</p>
+            <div class="max-w-3xl mx-auto mb-8">
+                <p class="text-lg mb-4">Memberikan koneksi stabil dengan harga terjangkau untuk wilayah Tebing Tinggi dan sekitarnya</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#paket" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">
+                    LIHAT PAKET
+                </a>
+                <a href="#daftar" class="bg-white hover:bg-gray-100 text-blue-600 font-bold py-3 px-8 rounded-full text-lg transition duration-300">
+                    DAFTAR SEKARANG
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Keunggulan -->
+    <section class="py-16 bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">KENAPA MEMILIH KAMI?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="neumorph p-6 rounded-xl text-center">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Koneksi Stabil</h3>
+                    <p>Jaringan fiber optic dengan uptime 99.9%</p>
+                </div>
+                <div class="neumorph p-6 rounded-xl text-center">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Layanan 24/7</h3>
+                    <p>Tim support siap membantu kapan saja</p>
+                </div>
+                <div class="neumorph p-6 rounded-xl text-center">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Harga Terjangkau</h3>
+                    <p>Paket mulai dari Rp100.000/bulan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Banner -->
+    <div class="bg-yellow-400 text-gray-900 py-3 px-4 text-center font-bold">
+        GRATIS PEMASANGAN! 50 Pelanggan Pertama
+    </div>
+
+    <!-- Paket Internet -->
+    <section id="paket" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">PAKET INTERNET</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Paket 10 Mbps -->
+                <div class="border border-gray-200 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-2xl font-bold text-center mb-2">10 Mbps</h3>
+                    <p class="text-4xl font-bold text-center text-blue-600 mb-4">Rp185.000</p>
+                    <ul class="space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Unlimited Quota</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Free Installation</li>
+                    </ul>
+                    <button class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition duration-300">
+                        Daftar Sekarang
+                    </button>
+                </div>
+
+                <!-- Paket 15 Mbps -->
+                <div class="border border-gray-200 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow transform hover:scale-105">
+                    <div class="absolute top-0 right-0 bg-red-500 text-white px-3 py-1 text-sm font-bold rounded-bl-lg">
+                        POPULER
+                    </div>
+                    <h3 class="text-2xl font-bold text-center mb-2">15 Mbps</h3>
+                    <p class="text-4xl font-bold text-center text-blue-600 mb-4">Rp230.000</p>
+                    <ul class="space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Unlimited Quota</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Free Installation</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Priority Support</li>
+                    </ul>
+                    <button class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition duration-300">
+                        Daftar Sekarang
+                    </button>
+                </div>
+
+                <!-- Paket 20 Mbps -->
+                <div class="border border-gray-200 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-2xl font-bold text-center mb-2">20 Mbps</h3>
+                    <p class="text-4xl font-bold text-center text-blue-600 mb-4">Rp270.000</p>
+                    <ul class="space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Unlimited Quota</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Free Installation</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Priority Support</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 1:1 Bandwidth</li>
+                    </ul>
+                    <button class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition duration-300">
+                        Daftar Sekarang
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">HUBUNGI KAMI</h2>
+            <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
+                <p class="text-lg mb-4">
+                    <i class="fas fa-phone-alt mr-2"></i> 0877-8008-2732
+                </p>
+                <p class="text-lg mb-4">
+                    <i class="fas fa-globe mr-2"></i> www.77net.com
+                </p>
+                <p class="text-gray-600">
+                    Layanan pelanggan tersedia 24/7 untuk membantu Anda
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-6 text-center">
+        <p>&copy; 2023 77.net - Provider Internet Tebing Tinggi</p>
+    </footer>
+
+    <!-- Dark Mode Toggle -->
+    <button class="dark-mode-toggle fixed bottom-8 right-8 w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700 shadow-lg z-50 flex items-center justify-center text-gray-800 dark:text-gray-200">
+        <i class="fas fa-moon dark:hidden"></i>
+        <i class="fas fa-sun hidden dark:block"></i>
+    </button>
+
+    <script>
+        const toggle = document.querySelector('.dark-mode-toggle');
+        toggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('darkMode', document.documentElement.classList.contains('dark'));
+        });
+
+        // Check for saved user preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+</body>
+</html>
