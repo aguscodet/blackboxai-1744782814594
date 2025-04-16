@@ -1,0 +1,83 @@
+/* Modern Styles */
+:root {
+    --primary: #4f46e5;
+    --secondary: #7c3aed;
+    --accent: #f59e0b;
+}
+
+/* Glassmorphism Effect */
+.glass {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Neumorphism Effect */
+.neumorph {
+    background: #f8fafc;
+    box-shadow:  8px 8px 16px #d9d9d9,
+                -8px -8px 16px #ffffff;
+}
+
+.dark .neumorph {
+    background: #1e293b;
+    box-shadow:  8px 8px 16px #0f172a,
+                -8px -8px 16px #334155;
+}
+
+/* Floating Button */
+.float-btn {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Smooth Transitions */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 100;
+}
+
+/* Existing Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #1e293b;
+    line-height: 1.6;
+    background-color: #f8fafc;
+}
+
+header {
+    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+}
+
+.bg-yellow-400 {
+    background-color: #fbbf24;
+}
+
+section {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+button {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: #1e293b;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
