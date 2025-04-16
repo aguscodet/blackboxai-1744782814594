@@ -1,0 +1,19 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 32px; }
+    .gradient { stop-color: #2563eb; }
+    .gradient2 { stop-color: #7c3aed; }
+  </style>
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" class="gradient"/>
+      <stop offset="100%" class="gradient2"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Network Icon -->
+  <path d="M20 40 L40 20 L60 40 L80 20 L100 40" stroke="url(#grad1)" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Text -->
+  <text x="120" y="40" fill="url(#grad1)" class="text">77.net</text>
+</svg>
